@@ -3,7 +3,7 @@
 By: Shirsho Dasgupta (2022)
 
 The code reads daily temperature — minimum, maximum, mean, dewpoint temperatures — for Miami-Dade County from 1983 to 2022. It then calls a pre-defined module to compute the heat index — a measure of what the temperature "feels like" for each of the days.
-Finally, it counts the number of days above certain heat index thresholds — which would make it a health risk for humans to be exposed to the sun for prolonged periods. Read about the thresholds here. 
+Finally, it counts the number of days above certain heat index thresholds — which would make it a health risk for humans to be exposed to the sun for prolonged periods. Read about the thresholds [here](https://www.weather.gov/ama/heatindex#:~:text=If%20you%20are%20exposed%20to,physical%20activity%20in%20the%20heat.). 
 
 The code also aims to predict the daily temperatures into 2053. 
 To do this three time series predictive models were first tested: Prophet, Neural Prophet and Holtz-Winter model. The second Neural Prophet model was found to have the least error-margins among the three. A separate block of code then tested for the best parameters for the model to implement. The mean and dewpoint temperatures for future dates were calculated after deploying Neural Prophet with the best parameters. Finally, using the predicted values, the heat indices for those future dates were also computed/predicted. 
