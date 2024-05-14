@@ -2,7 +2,7 @@
 
 By: Shirsho Dasgupta (2022)
 
-The code reads daily temperature — minimum, maximum, mean, dewpoint temperatures — for Miami-Dade County from 1983 to 2022. It then calls a pre-defined module to compute the heat index — a measure of what the temperature "feels like" for each of the days.
+The code reads daily temperature — minimum, maximum, mean, dewpoint temperatures — for Miami-Dade County from 1983 to 2022. It then calls a pre-defined module to compute the relative humidity and heat index — a measure of what the temperature "feels like" for each of the days — using Rothfusz Regression.
 Finally, it counts the number of days above certain heat index thresholds — which would make it a health risk for humans to be exposed to the sun for prolonged periods. Read about the thresholds [here](https://www.weather.gov/ama/heatindex#:~:text=If%20you%20are%20exposed%20to,physical%20activity%20in%20the%20heat.). 
 
 The code also aims to predict the daily temperatures into 2053. 
